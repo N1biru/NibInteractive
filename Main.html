@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nib Interactive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-white text-black font-sans dark:bg-black dark:text-white transition-colors duration-500">
+
+  <!-- Navbar w/ Dark Mode Toggle -->
+  <nav class="flex justify-between items-center px-6 py-4 border-b dark:border-gray-800">
+    <h1 class="text-2xl font-bold">Nib Interactive</h1>
+    <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition">
+      <!-- Icon will swap via JS -->
+      <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.485-8.485h1M3 12H2m15.364 6.364l.707.707M6.343 6.343l-.707-.707m12.728 12.728l.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+      </svg>
+      <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 118.646 3.646 7 7 0 0020.354 15.354z"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-24 bg-black text-white dark:bg-white dark:text-black" data-aos="fade-up"> <!-- style="background-image: url('your-image.jpg');" -->
+    <h1 class="text-5xl font-bold mb-4">Nib Interactive</h1>
+    <p class="text-lg opacity-80">Creating memorable and innovative gaming experiences.</p>
+  </section>
+
+  <section id="about" class="container mx-auto py-16 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">About Us</h2>
+    <p class="max-w-2xl mx-auto text-gray-700 mb-6">
+      At <strong>Nib Interactive</strong>, our mission is to create innovative and immersive experiences that inspire players around the world.  
+      Our team combines talent from programming, design, UI, and AI to build projects that push creativity forward.  
+    </p>
+    <div class="grid md:grid-cols-2 gap-8 mt-10">
+      <div class="p-6 border rounded-xl shadow-sm">
+        <h3 class="text-xl font-semibold mb-2">Mission</h3>
+        <p class="text-gray-600">To design games and tools that leave lasting impressions, blending technology and artistry into unforgettable experiences.</p>
+      </div>
+      <div class="p-6 border rounded-xl shadow-sm">
+        <h3 class="text-xl font-semibold mb-2">Vision</h3>
+        <p class="text-gray-600">To become a creative hub where innovation thrives — expanding into AI, UI, programming, and building branches that redefine interaction.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Branches -->
+  <section class="max-w-5xl mx-auto py-20 px-6">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Our Branches</h2>
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="p-6 border rounded-2xl shadow hover:shadow-lg transition text-center dark:border-gray-700" data-aos="fade-right">
+        <h3 class="text-xl font-semibold mb-2">Build Interactive</h3>
+        <p>Specializes in world-building, level design, and creating immersive spaces for players.</p>
+      </div>
+      <div class="p-6 border rounded-2xl shadow hover:shadow-lg transition text-center dark:border-gray-700" data-aos="fade-left">
+        <h3 class="text-xl font-semibold mb-2">AI Interactive</h3>
+        <p>Focused on creating smart, adaptive NPCs and game systems powered by artificial intelligence.</p>
+      </div>
+      <div class="p-6 border rounded-2xl shadow hover:shadow-lg transition text-center dark:border-gray-700" data-aos="fade-right">
+        <h3 class="text-xl font-semibold mb-2">Programming Interactive</h3>
+        <p>Handles the core systems, gameplay logic, and technical innovations behind our games.</p>
+      </div>
+      <div class="p-6 border rounded-2xl shadow hover:shadow-lg transition text-center dark:border-gray-700" data-aos="fade-left">
+        <h3 class="text-xl font-semibold mb-2">UI Interactive</h3>
+        <p>Designs user interfaces that are simple, stylish, and player-friendly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Work -->
+  <section class="bg-gray-100 dark:bg-gray-900 py-20 px-6" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Our Work</h2>
+      <p class="text-gray-600 dark:text-gray-400">Showcase coming soon — stay tuned for our upcoming projects.</p>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="max-w-5xl mx-auto py-20 px-6">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Our Team</h2>
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="p-6 border rounded-2xl shadow hover:shadow-lg transition text-center dark:border-gray-700" data-aos="zoom-in">
+		<img src="NibPFP.gif" alt="Nibiru" class="w-24 h-24 mx-auto rounded-full mb-4">
+        <h3 class="text-xl font-semibold">Nibiru</h3>
+        <p class="text-gray-600 dark:text-gray-400">Founder, Owner, Programmer, Builder</p>
+      </div>
+      <div class="p-6 border rounded-2xl shadow hover:shadow-lg transition text-center dark:border-gray-700" data-aos="zoom-in">
+		<img src="NIPlaceholder.png" alt="Bad" class="w-24 h-24 mx-auto rounded-full mb-4">
+        <h3 class="text-xl font-semibold">Bad</h3>
+        <p class="text-gray-600 dark:text-gray-400">Bot Manager (Discord Bot), Programmer, Animator, GUI</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 bg-black text-white dark:bg-white dark:text-black" data-aos="fade-up">
+    <p class="opacity-70">© 2025 Nib Interactive. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+
+    // Dark Mode Toggle
+    const themeToggle = document.getElementById("theme-toggle");
+    const sunIcon = document.getElementById("sun-icon");
+    const moonIcon = document.getElementById("moon-icon");
+    const html = document.documentElement;
+
+    function setTheme(dark) {
+      if (dark) {
+        html.classList.add("dark");
+        sunIcon.classList.remove("hidden");
+        moonIcon.classList.add("hidden");
+        localStorage.setItem("theme", "dark");
+      } else {
+        html.classList.remove("dark");
+        sunIcon.classList.add("hidden");
+        moonIcon.classList.remove("hidden");
+        localStorage.setItem("theme", "light");
+      }
+    }
+
+    // Load saved theme
+    if (localStorage.getItem("theme") === "dark") {
+      setTheme(true);
+    } else {
+      setTheme(false);
+    }
+
+    themeToggle.addEventListener("click", () => {
+      setTheme(!html.classList.contains("dark"));
+    });
+  </script>
+</body>
+</html>
